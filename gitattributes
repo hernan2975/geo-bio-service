@@ -1,0 +1,16 @@
+# Auto-normalizar finales de línea
+* text=auto
+
+# Mejoras de diff por tipo
+*.java diff=java
+*.xml diff=xml
+*.yml linguist-language=YAML
+*.md linguist-documentation
+*.json diff=json
+*.properties text
+
+# Archivos binarios
+*.png binary
+*.jpg binary
+*.gif binary
+
