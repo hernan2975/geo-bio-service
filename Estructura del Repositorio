@@ -1,0 +1,17 @@
+src/
+└── main/
+    ├── controller/
+    │   └── GeolocationController.java
+    ├── service/
+    │   └── GeolocationService.java
+    ├── client/
+    │   └── NominatimClient.java
+    ├── model/
+    │   ├── CoordinateRequest.java
+    │   └── AddressResponse.java
+    ├── config/
+    │   └── CacheConfig.java
+    └── exception/
+        ├── InvalidCoordinateException.java
+        └── ExternalApiException.java
+
