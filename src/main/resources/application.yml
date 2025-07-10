@@ -1,0 +1,15 @@
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: geo-bio-service
+
+  cache:
+    type: simple
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
