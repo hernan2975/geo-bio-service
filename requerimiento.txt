@@ -1,0 +1,21 @@
+
+Microservicio REST desarrollado en Java con Spring Boot que permite obtener direcciones a partir de coordenadas geográficas, utilizando una API externa como Nominatim (OpenStreetMap).
+
+Requerimientos Funcionales:
+- Endpoint REST POST /geolocate.
+- Entrada JSON con latitud y longitud.
+- Validación de rangos y tipos (latitud: -90 a 90, longitud: -180 a 180).
+- Consulta de dirección mediante API externa.
+- Gestión de errores: coordenadas inválidas, respuesta vacía, error de red.
+- Caché en memoria para llamadas repetidas.
+- Documentación Swagger / OpenAPI.
+- Pruebas unitarias con JUnit 5.
+
+Requerimientos No Funcionales:
+- Código limpio, modular y escalable.
+- Separación por capas: controlador, servicio, cliente externo, modelo, configuración.
+- Arquitectura RESTful.
+- Configuración externa en application.yml.
+- Licencia MIT.
+- Documentación clara en README.md.
+- Compatible con apps logísticas, de turnos y accesibles.
