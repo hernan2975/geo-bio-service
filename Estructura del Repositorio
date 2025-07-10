@@ -1,17 +1,45 @@
-src/
-└── main/
-    ├── controller/
-    │   └── GeolocationController.java
-    ├── service/
-    │   └── GeolocationService.java
-    ├── client/
-    │   └── NominatimClient.java
-    ├── model/
-    │   ├── CoordinateRequest.java
-    │   └── AddressResponse.java
-    ├── config/
-    │   └── CacheConfig.java
-    └── exception/
-        ├── InvalidCoordinateException.java
-        └── ExternalApiException.java
 
+Estructura Final del Repositorio geo-bio-service
+geo-bio-service/
+├── .gitignore
+├── .gitattributes
+├── LICENSE
+├── README.md
+├── pom.xml                 ← 📦 Proyecto Maven
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── portfolio/
+│   │   │           └── geobioservice/
+│   │   │               ├── GeoBioServiceApplication.java         ← Clase principal
+│   │   │               ├── controller/
+│   │   │               │   └── GeolocationController.java        ← Endpoint REST
+│   │   │               ├── service/
+│   │   │               │   └── GeolocationService.java           ← Lógica de negocio
+│   │   │               ├── client/
+│   │   │               │   └── NominatimClient.java              ← Consumo de API externa
+│   │   │               ├── model/
+│   │   │               │   ├── CoordinateRequest.java            ← Entrada JSON con validaciones
+│   │   │               │   └── AddressResponse.java              ← Salida con dirección
+│   │   │               ├── config/
+│   │   │               │   └── CacheConfig.java                  ← Configuración de caché
+│   │   │               └── exception/
+│   │   │                   ├── InvalidCoordinateException.java   ← Error por coordenadas inválidas
+│   │   │                   └── ExternalApiException.java         ← Error de API externa
+│   └── resources/
+│       ├── application.yml               ← Configuración de Spring
+│       └── static/                       ← Archivos estáticos (opcional)
+│       └── templates/                    ← Vistas Thymeleaf (si se necesitara)
+├── src/
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── portfolio/
+│                   └── geobioservice/
+│                       ├── controller/
+│                       │   └── GeolocationControllerTest.java   ← Pruebas del endpoint
+│                       ├── service/
+│                       │   └── GeolocationServiceTest.java      ← Pruebas de lógica
+│                       └── client/
+│                           └── NominatimClientTest.java         ← Simulación de llamadas
