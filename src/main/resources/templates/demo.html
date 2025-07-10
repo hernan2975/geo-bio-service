@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Demostración Geo Bio Service</title>
+</head>
+<body>
+  <h2>Resultado de Geolocalización</h2>
+  <p>Coordenadas:</p>
+  <ul>
+    <li>Latitud: <span th:text="${latitude}"></span></li>
+    <li>Longitud: <span th:text="${longitude}"></span></li>
+  </ul>
+  <p>Dirección estimada: <strong th:text="${address}"></strong></p>
+</body>
+</html>
